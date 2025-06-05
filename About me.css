@@ -1,0 +1,110 @@
+* {
+    padding: none;
+    margin: none;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: black;
+}
+
+.back {
+    display: flex;
+    color: white;
+    width: 20px;
+    margin: 5px;
+    padding: 6px 12px;
+    border-radius: 5px;
+
+}
+
+.back:hover {
+    background-color: rgb(228, 228, 228);
+    color: black;
+    width: 25px;
+    border-radius: 7px;
+    transition: all .5s ease;
+}
+
+nav {
+    position: relative;
+    width: 1250px;
+    
+}
+
+h1 {
+    margin-top: 10px;
+    background-color: #323232;
+    font-size: 35px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+img {
+    position: absolute;
+    height: 450px;
+    margin-left: 20px;
+}
+
+
+.Identitas {
+    position: absolute;
+    text-align: justify;
+    left: 420px;
+    top: 115px;
+    color: rgb(222, 222, 222);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #4f4f4f4f;
+    width: 500px;
+    padding: 10px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    
+}
+
+.Identitas a {
+    color: rgb(222, 222, 222);
+}
+
+.H-cerita {
+    position: absolute;
+    left: 420px;
+    top: 348px;
+    width: 550px;
+    background-color: #35353556;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 7px;
+    color: rgb(222, 222, 222);
+
+}
+
+.P-cerita {
+    color: #dedede;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #4f4f4f4f;
+    position: absolute;
+    text-align: justify;
+    left: 420px;
+    top: 380px;
+    width: 550px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#video {
+    width: 1065px;
+    position: absolute;
+    top: 1px;
+    left: 200px;
+}

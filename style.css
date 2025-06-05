@@ -1,0 +1,274 @@
+body {
+    padding: none;
+    margin: none;
+    background-color: #021c1e;
+}
+
+.kelas {
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1250px;
+}
+
+nav {
+    position: absolute;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #323232;
+    text-align: end;
+    width: 1225px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 7px;
+    transition: all .5s ease;
+}
+
+label #menu {
+    position: relative;
+    float: inline-start;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 10px;
+    top: 6px;
+    padding: 6px 12px;
+    
+}
+
+#menu:hover {
+   background-color: rgb(228, 228, 228);
+   color: black;
+   transition: all .7s ease;
+}
+
+label #cancel {
+    float: inline-start;
+    color: #0a5275;
+    background-color: #042331;
+    cursor: pointer;
+    z-index: 1111;
+    top: 170px;
+    left: -205px;
+    padding: 4px 3px;
+    position: absolute;
+    transition: all .6s ease;
+}
+
+.navbar-kanan a {
+    color: white;
+}
+
+.sidebar {
+    position: absolute;
+    margin-top: 68px;
+    left: -350px;
+    width: 320px;
+    height: 100%;
+    background-color: #042331;
+    transition: all .7s ease;
+    
+}
+
+.sidebar header {
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 70px;
+    background-color: #063146;
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    color: rgb(210, 204, 204);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+    text-decoration: none;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #menu {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 260px;
+
+}
+
+.fto-kelas {
+    position: absolute;
+    left: 50px;
+    height: 250px;
+    top: 148px;
+    margin-top: 1px;
+}
+
+
+.h2-deskripsi {
+    position: absolute;
+    text-align: center;
+    width: 729px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    color: white;
+    background-color: #002828;
+    border-radius: 7px;
+    left: 514px;
+    top: 137px;
+    padding-bottom: 7px;
+    
+}
+
+.deskripsi-kelas {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #003536;
+    position: absolute;
+    left: 514px;
+    top: 170px;
+    margin-top: 5px;
+    text-align: justify; 
+    width: 719px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Bu-yulya {
+    position: absolute;
+    width: 100px;
+    left: 1140px;
+    top: 415px;
+}
+
+.Bu-yulya2 {
+    position: absolute;
+    width: 100px;
+    top: 413px;
+    left: 50px;
+}
+
+#h2-bawah {
+    position: absolute;
+    color: white;
+    top: 400px;
+    left: 190px;
+    background-color: #1a342e;
+    padding: 5px;
+    width: 900px;
+    padding-right: 9px;
+    border-top-right-radius: 500px;
+}
+
+.Guru {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    top: 440px;
+    width: 900px;
+    text-align: justify;
+    left: 190px;
+    background-color: #20413b;
+    padding: 7px;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+    /* Responsive styles */
+  @media (max-width: 1200px) {
+    
+    .kelas {
+        width: 42%;
+    }
+    
+    nav {
+        width: 39%;
+    }
+
+    .fto-kelas {
+        left: 25px;
+        width: 400px;
+    }
+
+    .h2-deskripsi {
+        left: 24px;
+        top: 403px;
+        width: 400px;
+    }
+
+    .deskripsi-kelas {
+        left: 24px;
+        top: 436px;
+        width: 390px;
+    }
+
+    .Bu-yulya {
+        left: 60px;
+        top: 910px;
+        width: 150px;
+    }
+
+    .Bu-yulya2 {
+        left: 240px;
+        top: 910px;
+        width: 150px;
+    }
+
+    #h2-bawah {
+        left: 24px;
+        width: 390px;
+        top: 1170px;
+    }
+
+    .Guru {
+        left: 24px;
+        top: 1210px;
+        width: 390px;
+    }
+
+   
+  }
+
+
